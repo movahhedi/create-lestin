@@ -1,0 +1,71 @@
+$Responsive-Tablet-Max: 770px;
+$Responsive-Mobile-Max: 700px;
+
+// $Responsive-MobileSmall-Max: 500px;
+
+@mixin media-max($maxwidth) {
+	@media only screen and (max-width: $maxwidth) {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media only screen and (max-width: $Responsive-Mobile-Max) {
+		@content;
+	}
+}
+
+/* @mixin mobile_small() {
+	@media only screen and (max-width: $Responsive-MobileSmall-Max) {
+		@content;
+	}
+} */
+
+@mixin tablet() {
+	@media only screen and (max-width: $Responsive-Tablet-Max) {
+		@content;
+	}
+}
+
+/* Fonts */
+
+$Font-English: "Segoe UI", "Segoe Pro", sans-serif;
+$Font-Persian: "Vazirmatn FD", "Vazir FD", "Vazirmatn", "Vazir", sans-serif;
+$Font-Arabic: "Noto Kufi Arabic", $Font-Persian;
+$Font-Mono: "Consolas", monospace;
+
+/* Direction */
+$Direction: ltr;
+$Opposite-Direction: rtl;
+
+$Start-Direction: left;
+$End-Direction: right;
+
+$Transform-Direction: 1;
+
+/* Font Sizes */
+
+$Type-Diff: 1.32;
+
+$Type-H1: 2rem;
+$Type-H2: calc($Type-H1 / $Type-Diff);
+$Type-H3: calc($Type-H2 / $Type-Diff);
+$Type-H4: calc($Type-H3 / $Type-Diff);
+$Type-H5: calc($Type-H4 / $Type-Diff);
+$Type-H6: calc($Type-H5 / $Type-Diff);
+
+$Type-Paragraph-Regular: 1rem;
+$Type-Paragraph-Small: calc($Type-Paragraph-Regular / $Type-Diff);
+$Type-Paragraph-Large: calc($Type-Paragraph-Regular * $Type-Diff);
+
+$Type-Caption-Regular: 0.75rem;
+$Type-Caption-Small: calc($Type-Caption-Regular / $Type-Diff);
+$Type-Caption-Large: calc($Type-Caption-Regular * $Type-Diff);
+
+$Type-Button-Regular: 1rem;
+$Type-Button-Small: calc($Type-Button-Regular / $Type-Diff);
+$Type-Button-Large: calc($Type-Button-Regular * $Type-Diff);
+
+$Type-Input-Regular: 1rem;
+$Type-Input-Small: calc($Type-Input-Regular / $Type-Diff);
+$Type-Input-Large: calc($Type-Input-Regular * $Type-Diff);

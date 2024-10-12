@@ -1,0 +1,20 @@
+node_modules
+temp
+dist
+build
+
+# Packages
+node_modules
+node_modules*
+vendor
+**/.pnp.*
+**/.yarn/*
+!**/.yarn/patches
+!**/.yarn/plugins
+!**/.yarn/releases
+!**/.yarn/sdks
+!**/.yarn/versions
+.parcel-cache
+
+# create-lestin Templates
+!templates

@@ -1,0 +1,5 @@
+# Auto detect text files and perform CRLF normalization
+* text=auto eol=crlf
+
+/.yarn/releases/** binary
+/.yarn/plugins/** binary

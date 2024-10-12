@@ -1,0 +1,51 @@
+{
+	"name": "create-shahab",
+	"version": "0.0.2",
+	"description": "Creates a new project with Shahab's tech stack",
+	"keywords": [
+		"create",
+		"shahab"
+	],
+	"homepage": "https://github.com/movahhedi/create-shahab",
+	"bugs": {
+		"url": "https://github.com/movahhedi/create-shahab"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/movahhedi/create-shahab"
+	},
+	"license": "MIT",
+	"author": "Shahab Movahhedi",
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs",
+			"default": "./dist/index.js"
+		}
+	},
+	"bin": "./dist/index.js",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"templates",
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup --format esm,cjs --clean --dts",
+		"prepublishOnly": "yarn build",
+		"update": "npx npm-check-updates -i"
+	},
+	"dependencies": {
+		"commander": "^12.1.0",
+		"yargs": "^17.7.2"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.11",
+		"@types/yargs": "^17.0.32",
+		"npm-check-updates": "^16.14.20",
+		"tsup": "^8.2.1",
+		"typescript": "^5.5.3"
+	},
+	"packageManager": "yarn@4.5.0"
+}

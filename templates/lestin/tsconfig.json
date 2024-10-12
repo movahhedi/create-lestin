@@ -1,0 +1,42 @@
+{
+	"compilerOptions": {
+		"noImplicitAny": false,
+		"target": "ESNext",
+		"module": "ESNext",
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"moduleResolution": "node",
+		"removeComments": false,
+		"preserveConstEnums": true,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"jsx": "react-jsx",
+		"jsxImportSource": "lestin",
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"typeRoots": ["./node_modules/@types/", "./types", "./node_modules"],
+		"types": ["vite/client"],
+		"strict": true,
+		"plugins": [
+			{
+				"name": "typescript-plugin-css-modules",
+				"options": {
+					"classnameTransform": "camelCaseOnly"
+				}
+			},
+			{
+				"name": "ts-plugin-sort-import-suggestions",
+				"moveUpPatterns": ["^#/", "^@/", "\\.{1,2}/"],
+				"moveDownPatterns": ["dist"]
+			}
+		]
+	},
+	"include": [
+		"src/**/*",
+		"../shared/src/**/*",
+		"rollup.config.js",
+		"vite.config.ts",
+		"*.cjs"
+	],
+	"exclude": ["node_modules", "**/*.spec.ts"]
+}

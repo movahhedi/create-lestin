@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"noImplicitAny": false,
+		"lib": ["ESNext"],
+		"target": "ESNext",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"outDir": "dist",
+		"removeComments": false,
+		"preserveConstEnums": true,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"allowImportingTsExtensions": false,
+		"noEmit": false,
+		"declaration": true,
+		"strict": true
+	}
+}

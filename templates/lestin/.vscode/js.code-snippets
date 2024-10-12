@@ -1,0 +1,12 @@
+{
+	"l": {
+		"prefix": ["", "l"],
+		"body": ["console.log(${1});"],
+		"description": "Place a `console.log()`",
+		"scope": "javascript,typescript,javascriptreact,typescriptreact"
+	},
+	"Increment integer": {
+		"prefix": "i++",
+		"body": ["${CURSOR_INDEX}"]
+	}
+}

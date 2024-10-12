@@ -1,0 +1,96 @@
+@use "../Config" as *;
+
+.hidden {
+	display: none;
+}
+
+.english {
+	direction: ltr;
+	text-align: start;
+	font-family: $Font-English;
+}
+
+.persian {
+	direction: rtl;
+	text-align: start;
+	font-family: $Font-Persian;
+}
+
+.arabic {
+	direction: rtl;
+	text-align: start;
+	font-family: $Font-Arabic;
+}
+
+*[dir="ltr"],
+.ltr {
+	direction: ltr;
+	text-align: start;
+}
+
+*[dir="rtl"],
+.rtl {
+	direction: rtl;
+	text-align: start;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+code,
+.englishMono,
+.mono {
+	direction: ltr;
+	text-align: left;
+	font-family: $Font-Mono;
+}
+
+:root,
+html {
+	$Direction: ltr !global;
+	$Opposite-Direction: rtl !global;
+	$Start-Direction: left !global;
+	$End-Direction: right !global;
+	$Transform-Direction: 1 !global;
+
+	--direction: $Direction;
+	--opposite-direction: $Opposite-Direction;
+
+	direction: var(--direction, $Direction);
+	font-size: 100%;
+
+	/* &[dir="ltr"],
+	&:dir(ltr),
+	&.ltr {
+		background-color: #0060c0;
+		direction: ltr;
+		font-family: $Font-English;
+	} */
+
+	// &:dir(rtl),
+
+	&[dir="rtl"],
+	&.rtl {
+		$Direction: rtl !global;
+		$Opposite-Direction: ltr !global;
+		$Start-Direction: right !global;
+		$End-Direction: left !global;
+		$Transform-Direction: -1 !global;
+
+		--direction: $Direction;
+		--opposite-direction: $Opposite-Direction;
+
+		font-family: $Font-Persian;
+	}
+}
+
+// For finding bugs
+
+.undefined,
+#undefined,
+.null,
+#null {
+	color: lime !important;
+	background-color: red !important;
+}
