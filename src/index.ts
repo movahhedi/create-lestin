@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 
+// cspell:ignore CREATECOMMAND
+
 import fs from "fs/promises";
 import Path from "path";
 import { fileURLToPath } from "url";
 import { execSync } from "child_process";
 import { Command } from "commander";
-import { version } from '../package.json';
+import PackageJson from '../package.json' with { type: "json" };
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = Path.dirname(fileURLToPath(import.meta.url));
@@ -15,7 +17,7 @@ const program = new Command();
 program
 	.name("create-shahab")
 	.description("Create a new project with Shahab's stack")
-	.version(version, "-v, -V, --version", "create-shahab's version")
+	.version(PackageJson.version, "-v, -V, --version", "create-shahab's version")
 	.argument("<dir-name>", "Directory of the project")
 	.option("-f, --force", "Force create a project in a non-empty directory")
 	.option("-G, --no-git", "Don't initialize a git repository")
@@ -78,7 +80,9 @@ program
 
 		console.log("Project created successfully at the directory:", dirName, "\n");
 		console.log("To start the project, run the following commands:\n");
-		console.log(`\tcd ${dirNameRaw}`);
+		if (dirNameRaw !== ".") {
+			console.log(`\tcd ${dirNameRaw}`);
+		}
 		console.log("\tyarn install");
 
 		console.log("\nHappy coding!");

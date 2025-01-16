@@ -37,15 +37,13 @@
 		"update": "npx npm-check-updates -i"
 	},
 	"dependencies": {
-		"commander": "^12.1.0",
-		"yargs": "^17.7.2"
+		"commander": "^12.1.0"
 	},
 	"devDependencies": {
 		"@types/node": "^20.14.11",
-		"@types/yargs": "^17.0.32",
 		"npm-check-updates": "^16.14.20",
 		"tsup": "^8.2.1",
 		"typescript": "^5.5.3"
 	},
-	"packageManager": "yarn@4.5.0"
+	"packageManager": "yarn@4.6.0"
 }

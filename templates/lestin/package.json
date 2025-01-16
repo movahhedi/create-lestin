@@ -89,5 +89,5 @@
 		"vite": "^5.3.1",
 		"vite-plugin-singlefile": "^2.0.2"
 	},
-	"packageManager": "yarn@4.5.0"
+	"packageManager": "yarn@4.6.0"
 }
