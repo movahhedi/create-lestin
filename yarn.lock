@@ -1095,9 +1095,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-shahab@workspace:.":
+"create-lestin@workspace:.":
   version: 0.0.0-use.local
-  resolution: "create-shahab@workspace:."
+  resolution: "create-lestin@workspace:."
   dependencies:
     "@types/node": "npm:^20.14.11"
     commander: "npm:^12.1.0"
@@ -1105,7 +1105,7 @@ __metadata:
     tsup: "npm:^8.2.1"
     typescript: "npm:^5.5.3"
   bin:
-    create-shahab: ./dist/index.js
+    create-lestin: ./dist/index.js
   languageName: unknown
   linkType: soft
 

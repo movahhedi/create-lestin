@@ -1,18 +1,18 @@
 {
-	"name": "create-shahab",
+	"name": "create-lestin",
 	"version": "0.0.2",
-	"description": "Creates a new project with Shahab's tech stack",
+	"description": "Creates a new project with Lestin",
 	"keywords": [
 		"create",
-		"shahab"
+		"lestin"
 	],
-	"homepage": "https://github.com/movahhedi/create-shahab",
+	"homepage": "https://github.com/movahhedi/create-lestin",
 	"bugs": {
-		"url": "https://github.com/movahhedi/create-shahab"
+		"url": "https://github.com/movahhedi/create-lestin"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/movahhedi/create-shahab"
+		"url": "https://github.com/movahhedi/create-lestin"
 	},
 	"license": "MIT",
 	"author": "Shahab Movahhedi",

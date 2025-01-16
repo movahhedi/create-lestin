@@ -15,9 +15,9 @@ const __dirname = Path.dirname(fileURLToPath(import.meta.url));
 const program = new Command();
 
 program
-	.name("create-shahab")
-	.description("Create a new project with Shahab's stack")
-	.version(PackageJson.version, "-v, -V, --version", "create-shahab's version")
+	.name("create-lestin")
+	.description("Create a new project with Lestin")
+	.version(PackageJson.version, "-v, -V, --version", "create-lestin's version")
 	.argument("<dir-name>", "Directory of the project")
 	.option("-f, --force", "Force create a project in a non-empty directory")
 	.option("-G, --no-git", "Don't initialize a git repository")

@@ -1,23 +1,23 @@
-# create-shahab
-Create a new project with Shahab's tech stack.
+# create-lestin
+Create a new project with Lestin.
 
 ## Usage
 Run:
 ```bash
-npm create shahab
+npm create lestin
 ```
 
 ## Help
 ```
-Usage: create-shahab [options] <dir-name>
+Usage: create-lestin [options] <dir-name>
 
-Create a new project with Shahab's stack
+Create a new project with Lestin.
 
 Arguments:
   dir-name           Directory of the project
 
 Options:
-  -v, -V, --version  create-shahab's version
+  -v, -V, --version  create-lestin's version
   -f, --force        Force create a project in a non-empty directory
   -G, --no-git       Don't initialize a git repository
   -i, --install      Install dependencies after creating the project
